@@ -1,0 +1,190 @@
+<DOCTYPE! html>
+<html>
+<head>
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/pic1yes.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  paddding:-10px -10px -10px -10px;
+}
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: poppins;
+  font-size: 14px;
+  font-family: arial;
+}
+.nav-area li a:hover{
+  background: #fff;
+  color: #333;
+}
+.logo img{
+  width: 100px;
+  float: left;
+  height: auto;
+}
+p.hello{
+  text-align: center;
+  font-size: 25px;
+  font-family: Helvetica;
+  color: black;
+  text-shadow: none;
+  float: left;
+}
+
+.button{
+  background-image: linear-gradient(to bottom right, #4677bd, #812a9c);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: helvetica;
+  position: relative;
+}
+
+p{
+  padding-left: 30px;
+  padding-top: 40px;
+  font-family: Delicious;
+  color: white;
+  font-size: 50px;
+  text-shadow: -4px 4px black;
+}
+.rectangle{
+  background-color: #202020;
+  width: 100%;
+  height:10px;
+}
+
+h1{
+  font-family: Helvetica;
+  font-size: 25px;
+  padding-left: 20px;
+}
+    @font-face { font-family: Delicious; src: url('../fonts/lmntuesday.otf'); } 
+</style>
+</head>
+<body>
+    <header>
+      <div class="wrapper">
+        <div class="logo" <img src="../images/pic1yes.jpeg" alt="">
+        </div>
+        <ul class="nav-area">
+          <li><a href="Home.html">home</a></li>
+          <li><a href="hometestwp.html">test</a></li>
+          <li><a href="games.html">games</a></li>
+          <li><a href="helpwp.html">help</a></li>
+          <li><a href="frms.html">forums</a></li>
+        </ul>
+		<p> Depression and Anxiety:<br>How About You?
+      </div>
+    </header>
+<div class="rectangle"></div>
+<p class="hello">
+The test below is simple. You will be shown some situations, and you'll have to choose on how often you can relate to that situation.
+After that, your results will be displayed. Don't feel pressured though. You can take your time here. There is no time limit. 
+Click the button below to begin the test.
+Just choose either<br><br>1 = Not at all/Rarely.<br>2 = Sometimes<br>3 = Often<br>4 = Mostly.<br>
+
+<button class="button" type="button" onclick="myFunction()"> Start Test </button>
+<p id="demo" class="hello"></p><
+<p class="hello"> After the test, your answers will be shown. Add them up, and choose the right button to see your result.
+<script>
+var myFunction = function() {
+		let res = 0;
+		let qty = 0;
+		var ans1 = window.prompt ("I get attacked by insomnia, or i tend to oversleep.",1);
+		if ((ans1 > 3) || (ans1 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans1 = window.prompt ("I get attacked by insomnia, or i tend to oversleep.",1);
+		}
+		else {}
+		var ans2 = window.prompt ("I do not feel the need to engage in leisurely activities .",1);
+		if ((ans2 > 3) || (ans2 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans2 = window.prompt ("I do not feel the need to engage in leisurely activities .",1);
+		}
+		else {}
+		var ans3 = window.prompt ("I degrade myself, telling me that I'm a let down to others.",1);
+		if ((ans3 > 3) || (ans3 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans3 = window.prompt ("I degrade myself, telling me that I'm a let down to others.",1);
+		}
+		else {}
+		var ans4 = window.prompt ("I tend to overeat, or not eat much at all.",1);
+		if ((ans4 > 3) || (ans4 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans4 = window.prompt ("I tend to overeat, or not eat much at all.",1);
+		}
+		else {}
+		var ans5 = window.prompt ("My focus on things tend to be poor.",1);
+		if ((ans5 > 3) || (ans5 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans5 = window.prompt ("My focus on things tend to be poor.",1);
+		}
+		else {}
+		var ans6 = window.prompt ("I feel drained of energy.",1);
+		if ((ans6 > 3) || (ans6 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans6 = window.prompt ("I feel drained of energy.",1);
+		}
+		else {}
+		var ans7 = window.prompt ("I speak so slowly that others begin to take notice.",1);
+		if ((ans7 > 3) || (ans7 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans7 = window.prompt ("I speak so slowly that others begin to take notice.",1);
+		}
+		else {}
+		var ans8 = window.prompt ("The world would be a better place without me.",1);
+		if ((ans8 > 3) || (ans8 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans8 = window.prompt ("The world would be a better place without me.",1);
+		}
+		else {}
+		var ans9 = window.prompt ("I feel as if all hope is lost, like there's nothing left but to be sad.",1);
+		if ((ans9 > 3) || (ans9 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans9 = window.prompt ("I feel as if all hope is lost, like there's nothing left but to be sad.",1);
+		}
+		else {}
+		var ans0 = window.prompt ("If you have experiened the situations stated earlier, how hard was it to cope with them? (0=Not at all  1=Quite hard  2=Really Hard  3=Extremely Hard)",1);
+		if ((ans0 > 3) || (ans0 < 0)){
+		  window.alert ("Please only choose 0 to 3.");
+		  var ans0 = window.prompt ("If you have experiened the situations stated earlier, how hard was it to cope with them? (0=Not at all  1=Quite hard  2=Really Hard  3=Extremely Hard)",1);
+		}
+		else {}
+        res = +ans1 + +ans2 + +ans3 + +ans4 + +ans5 + +ans6 + +ans7 + +ans8 + +ans9 + +ans0;
+		document.getElementById ("demo").innerHTML = ans1 + " + " + ans2 + " + " + ans3 + " + " + ans4 + " + " + ans5 + " + " + ans6 + " + " + ans7 + " + " + ans8 + " + " + ans9 + " + " + ans0 + " = Result:" + res;
+		
+}
+</script>
+<a href="result1.html"  class="button">If your score is 0 to 8, click here</a>
+<a href="result2.html"  class="button">If your score is 9 to 15, click here</a>
+<a href="result3.html"  class="button">If your score is 16 to 23, click here</a>
+<a href="result4.html"  class="button">If your score is 24 to 30, click here</a>
+</body>
+</html>

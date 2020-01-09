@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+header {
+  background: url("../images/galaxy.gif");
+  height: 130vh;
+  position: relative;
+  border-left: solid black;
+  border-right: solid black;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  float: right;
+  position: relative;
+  margin: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  }
+
+.nav-area li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+.link:after {
+  transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.link:hover:after {
+  width: 100%;
+  left: 0;
+  background: #FF2C93;
+}
+img {
+  width: 1170px;
+  float: left;
+  height: auto;
+}
+.welcome-text{
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  margin: 20% 30%;
+  text-align: center;
+}
+.welcome-text h1{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+    font-family: Delicious;
+}
+.welcome-text a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+    font-family: Delicious;
+}
+.welcome-text a:hover{
+  background-color: #fff;
+    color: #333;
+}
+    @font-face { font-family: Delicious; src: url('../fonts/lmntuesday.otf'); } 
+footer {
+  color: white;
+  text-align: center;
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  background: url("../images/galaxy.gif");
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fot1 {
+ padding: 35px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.fot2 {
+ background-color: #70b9db;
+ overflow: hidden;
+ text-align: left;
+ padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Georgia, Times, "Times New Roman", serif;
+ 
+}
+.navarea2 {
+  float: left;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.navarea2 li {
+	display: inline-block;
+}
+
+.navarea2 li a {
+  float: left;
+  position: relative;
+  margin: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+}
+
+.navarea2 li a:after {
+	content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+
+.link3:after {
+	transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.link3:hover:after {
+	width: 100%;
+  left: 0;
+  background: blue;
+	}
+.container {
+  background: url("../images/bluegalaxy.gif");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: block;
+  text-align: center;
+  float: left;
+  border-left: solid black;
+  border-right: solid black;
+  width: 98.40vw;
+  height: 100vh;
+  position: relative;
+  text-decoration: none;
+ } 
+.box1, .box2 {
+  background-image: linear-gradient(240deg, #70b9db, #fff5ee);
+  float: left;
+  padding: 10px;
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 8%;
+  width: 13%;
+  height: 80vh;
+  border-style: solid;
+  border-color: white;
+  text-align: center;
+  color: black;
+    font-family: Delicious; src: url('../fonts/lmntuesday.otf');
+
+}
+
+.box3, .box4 {
+	background-image: linear-gradient(240deg, #70b9db, #fff5ee);
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+  margin-right: 8%;
+  width: 13%;
+  height: 80vh;
+  border-style: solid;
+  padding: 10px;
+  border-color: white;
+  text-align: center;
+  font-family: Delicious; src: url('../fonts/lmntuesday.otf');
+}
+
+.boxy1, .boxy2, .boxy3, .boxy4 {
+  display: inline-block;
+  background-color: #7083db;
+  list-style: none;
+  margin: auto;
+  width: 50%;
+  border-style: solid;
+  border-color: white;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+p.pt1 {
+	
+}
+.link2:link{
+	color: white;
+	text-decoration: none;
+}
+.boxy1 a:hover, .boxy2 a:hover, .boxy3 a:hover, .boxy4 a:hover{
+	color: blue;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.boxy1:hover, .boxy2:hover, .boxy3:hover, .boxy4:hover{
+  background-image: linear-gradient(yellow, yellow);
+}
+.boxy1:hover a, .boxy2:hover a, .boxy3:hover a, .boxy4:hover a{
+	color: blue;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.hd1 {
+ color: white;
+}

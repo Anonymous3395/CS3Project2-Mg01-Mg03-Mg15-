@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forums</title>
+	<style>
+	* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../images/gradient.png);
+}
+
+
+.container {
+  padding: 0 50px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+.nav-area li {
+  display: inline-block;
+}
+.nav-area li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: poppins;
+  font-size: 14px;
+}
+.nav-area li a:hover{
+  background: #fff;
+  color: #333;
+}
+
+.jumbotron {
+  padding: 50px 30px;
+  margin: 10px 0;
+  background: #eee;
+}
+
+.topic-title {
+  border-top: 2px solid #3da1d7;
+  border-bottom: 2px solid #3da1d7;
+  padding: 5px 10px;
+  display: flex;
+  font-size: 18px;
+  color: #d9e3ed;
+  background: #3f73c0;
+}
+
+.tt-title {
+  flex: 4;
+}
+
+.tt-topic {
+  flex: 1;
+  text-align: center;
+}
+
+.tt-post {
+  flex: 1;
+  text-align: center;
+}
+
+.tt-l-post {
+  flex: 2;
+  text-align: center;
+}
+
+.topic-content {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  font-size: 14px;
+  color: #468499;
+  border-bottom: 1px solid #3da1d7;
+}
+
+.tc-description {
+  flex: 4;
+}
+
+.d-title {
+  color: #3da1d7;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.d-description {
+  margin-bottom: 10px;
+}
+
+.mobile-info {
+  display: none;
+}
+
+.tc-topic {
+  flex: 1;
+  text-align: center;
+}
+
+.tc-post {
+  flex: 1;
+  text-align: center;
+}
+
+.tc-l-post {
+  flex: 2;
+}
+
+@media all and (max-width: 710px) {
+  .tt-topic, .tt-post, .tt-l-post, .tc-topic, .tc-post,.tc-l-post {
+    display: none;
+  }
+  
+  .mobile-info {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  .mi-topics, .mi-posts, .mi-lpost {
+        margin-right: 20px;
+  }  
+}
+
+@media all and (max-width: 500px) {
+  .container{
+    padding:0;
+    margin: 0;
+  }
+  
+  .jumbotron {
+    display: none;
+  }
+}
+	</style>
+  </head>
+  <body>
+<div class="container">
+  
+  <div class="wrapper">
+        <ul class="nav-area">
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+  <div class="jumbotron">
+    <h1>Welcome to our forums!</h1>
+    <h2>Hopefully, you'll have some fun here. Check out our rules and go on your way! :></h2>
+  </div>
+  <div class="forum-wrapper">
+    <div class="categories">
+      <div class="topic-title">
+        <div class="tt-title">Categories</div>
+        <div class="tt-topic"> Topics</div>
+        <div class="tt-post">Posts</div>
+        <div class="tt-l-post">Last Post</div>
+      </div>
+      <!--Content-->
+      <div class="topic-content">
+        <div class="tc-description">
+          <div class="d-title">!Maintenance Check!</div>
+          <div class="d-description">
+            <p>Due for maintenance check from January 9, 2020 until the end of forever. NO operations will continue.</p>
+          </div>
+          <div class="mobile-info">
+            <div class="mi-topics">
+              <p>Topics</p>
+              <p>1</p>
+            </div>
+            <div class="mi-posts">
+              <p>Posts</p>
+              <p>1</p>
+            </div>
+            <div class="mi-lpost">
+              <p>Last Post</p>
+              <p>by Admin R</p>
+              <p>Thursday January 9, 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="tc-topic">1</div>
+        <div class="tc-post">1</div>
+        <div class="tc-l-post">
+          <div class="lp-user">by Admin R</div>
+          <div class="lp-date">Thursday January 9, 2020</div>
+        </div>
+      </div>
+      <!--End of Content-->
+      <div class="topic-content">
+        <div class="tc-description">
+          <div class="d-title">Rules and Regulations</div>
+          <div class="d-description">
+            <p>Some of the rules and regulations show in this thread applies to our website. </p>
+          </div>
+          <div class="mobile-info">
+            <div class="mi-topics">
+              <p>Topics</p>
+              <p>1</p>
+            </div>
+            <div class="mi-posts">
+              <p>Posts</p>
+              <p>3</p>
+            </div>
+            <div class="mi-lpost">
+              <p>Last Post</p>
+              <p>by Admin G</p>
+              <p>Thursday January 9, 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="tc-topic">1</div>
+        <div class="tc-post">3</div>
+        <div class="tc-l-post">
+          <div class="lp-user">by Admin G</div>
+          <div class="lp-date">Thursday January 9, 2020</div>
+        </div>
+      </div>
+      <div class="topic-content">
+        <div class="tc-description">
+          <div class="d-title">Support Groups to Follow </div>
+          <div class="d-description">
+            <p>In the post shows support groups to follw in Twitter, Facebook and other social media. </p>
+          </div>
+          <div class="mobile-info">
+            <div class="mi-topics">
+              <p>Topics</p>
+              <p>1</p>
+            </div>
+            <div class="mi-posts">
+              <p>Posts</p>
+              <p>3</p>
+            </div>
+            <div class="mi-lpost">
+              <p>Last Post</p>
+              <p>by Admin A</p>
+              <p>Thursday January 9, 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="tc-topic">1</div>
+        <div class="tc-post">3</div>
+        <div class="tc-l-post">
+          <div class="lp-user">by Admin A</div>
+          <div class="lp-date">Thursday January 9, 2020</div>
+        </div>
+      </div>
+      <div class="topic-content">
+        <div class="tc-description">
+          <div class="d-title">!Report bugs by filling out our form! </div>
+          <div class="d-description">
+            <p>The following link will be:</p>
+          </div>
+          <div class="mobile-info">
+            <div class="mi-topics">
+              <p>Topics</p>
+              <p>1</p>
+            </div>
+            <div class="mi-posts">
+              <p>Posts</p>
+              <p>1</p>
+            </div>
+            <div class="mi-lpost">
+              <p>Last Post</p>
+              <p>by Admin R</p>
+              <p>Thursday January 9, 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="tc-topic">1</div>
+        <div class="tc-post">1</div>
+        <div class="tc-l-post">
+          <div class="lp-user">by Admin R</div>
+          <div class="lp-date">Thursday January 9, 2020</div>
+        </div>
+      </div>
+      <div class="topic-content">
+        <div class="tc-description">
+          <div class="d-title">I've been feeling down these couple of months... </div>
+          <div class="d-description">
+            <p>Can anyone tell me what's wrong? </p>
+          </div>
+          <div class="mobile-info">
+            <div class="mi-topics">
+              <p>Topics</p>
+              <p>2</p>
+            </div>
+            <div class="mi-posts">
+              <p>Posts</p>
+              <p>4</p>
+            </div>
+            <div class="mi-lpost">
+              <p>Last Post</p>
+              <p>by Guest</p>
+              <p>Thursday January 9, 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="tc-topic">3</div>
+        <div class="tc-post">3</div>
+        <div class="tc-l-post">
+          <div class="lp-user">by Guest</div>
+          <div class="lp-date">Thursday January 9, 2020</div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
