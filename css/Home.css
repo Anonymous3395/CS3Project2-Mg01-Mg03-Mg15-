@@ -209,6 +209,7 @@ footer {
   padding: 10px;
   border-color: white;
   text-align: center;
+  color: black;
   font-family: Delicious; src: url('../fonts/lmntuesday.otf');
 }
 
@@ -220,6 +221,7 @@ footer {
   width: 50%;
   border-style: solid;
   border-color: white;
+  color: black;
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 p.pt1 {
