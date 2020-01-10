@@ -66,7 +66,8 @@ img {
   position: absolute;
   width: 500px;
   height: 300px;
-  margin: 20% 30%;
+  margin-left: 50%;
+  margin-right: 50%;
   text-align: center;
 }
 .welcome-text h1{
